@@ -1,0 +1,12 @@
+
+#Pressing mute toggles the mute
+"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+XF86AudioMute
+
+#Pressing volume down decreases the volume
+"pactl set-sink-volume @DEFAULT_SINK@ -5%"
+XF86AudioLowerVolume
+
+#Pressing volume up increases the volume
+"pactl set-sink-volume @DEFAULT_SINK@ +5%"
+XF86AudioRaiseVolume

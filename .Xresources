@@ -1,0 +1,67 @@
+!! Configure URXVT Terminals
+!
+URxvt.scrollBar: off
+URxvt.font: xft:Hack:size=14
+URxvt.boldFont: xft:Hack:size=14
+URxvt*cursorColor: #adcbe0
+
+URxvt.boldFont: xft:Hack:size=14
+URxvt*cursorColor: #adcbe0
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer
+URxvt*scrollWithBuffer: true
+
+! hard contrast: *background: #1d2021
+*background: #1d2021
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+!*color2:  #98971a
+!*color10: #b8bb26
+*color2:  #b7be6f
+*color10: #545b0d
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + Grey
+*color7:  #a89984
+*color15: #ebdbb2
+
+!! Extensions
+URxvt.perl-ext-common: default,resize-font,url-select,clipboard,selection-to-clipboard
+
+URxvt.iso14755: False
+
+! Allow copying and pasting
+URxvt.clipboard.autocopy: true
+URxvt.keysym.Control-Shift-C: perl:clipboard:copy
+URxvt.keysym.Control-Shift-V: perl:clipboard:paste
+!!URxvt.keysym.M-c: eval:selection-to-clipboard
+!!URxvt.keysym.M-v: eval:paste-clipboard
+
+!!resize-font (type ctrl-+ to increase font size, ctrl +- to decrease)
+URxvt.keysym.C-j: resize-font:smaller
+URxvt.keysym.C-k: resize-font:bigger
+
+!! url-select (type alt-u to highlight last url, hjkl to move from there, y to yank)
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: firefox
+URxvt.url-select.underline: true
