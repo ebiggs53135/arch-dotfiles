@@ -1,0 +1,19 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AutoWrap",
+		"LaTeX Equation Preview",
+		"LaTeX-cwl",
+		"LaTeXTools",
+		"LaTeXYZ",
+		"Package Control",
+		"Python 3",
+		"Python Breakpoints",
+		"Python Checker",
+		"Python Improved"
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"font_size": 12,
+	"spell_check": true,
+	"save_on_focus_lost": true,
+	"auto_complete_commit_on_tab": true,
+	"show_line_endings": true,
+	"rulers": [80],
+	"always_show_minimap_viewport": true,
+	// "caret_style": "blink"
+	"match_brackets_angle": true,
+	"indent_guide_options": ["draw_normal","draw_active"],
+	"show_encoding": true
+}
