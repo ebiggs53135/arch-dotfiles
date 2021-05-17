@@ -1,9 +1,10 @@
 !! Configure URXVT Terminals
 !
-URxvt.scrollBar: off
+URxvt.scrollBar: on
 URxvt.font: xft:Hack:size=14
 URxvt.boldFont: xft:Hack:size=14
 URxvt*cursorColor: #adcbe0
+URxvt.iso14755: false
 
 URxvt.boldFont: xft:Hack:size=14
 URxvt*cursorColor: #adcbe0
@@ -60,6 +61,8 @@ URxvt.keysym.Control-Shift-V: perl:clipboard:paste
 !!resize-font (type ctrl-+ to increase font size, ctrl +- to decrease)
 URxvt.keysym.C-j: resize-font:smaller
 URxvt.keysym.C-k: resize-font:bigger
+URxvt.keysym.C--: resize-font:smaller
+URxvt.keysym.C-+: resize-font:bigger
 
 !! url-select (type alt-u to highlight last url, hjkl to move from there, y to yank)
 URxvt.keysym.M-u: perl:url-select:select_next
